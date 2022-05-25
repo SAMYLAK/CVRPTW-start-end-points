@@ -10,9 +10,9 @@ from ortools.constraint_solver import pywrapcp
 
 def create_data_model():   
     data = {}
-    _locations = \
-            [(4, 4), # depot
-             (2, 0), (8, 0), # locations to visit
+    _locations = 
+            [(4, 4), 'depot'
+             (2, 0), (8, 0), '1,2 locations to visit'
              (0, 1), (1, 1),
              (5, 2), (7, 2),
              (3, 3), (6, 3),
