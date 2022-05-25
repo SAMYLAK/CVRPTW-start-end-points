@@ -1,4 +1,3 @@
-```
 from functools import partial
 from ortools.constraint_solver import routing_enums_pb2
 from ortools.constraint_solver import pywrapcp
@@ -310,4 +309,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-```
+
