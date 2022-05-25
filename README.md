@@ -7,23 +7,11 @@ Created on Tue May 15 22:31:22 2022
 @author: h.lakhdar
 """
 
-# [START program]
-"""Capacitated Vehicle Routing Problem with Time Windows (CVRPTW).
-   This is a sample using the routing library python wrapper to solve a CVRPTW
-   problem.
-   A description of the problem can be found here:
-   http://en.wikipedia.org/wiki/Vehicle_routing_problem.
-   Distances are in meters and time in minutes.
-"""
-
-# [START import]
 from functools import partial
 from ortools.constraint_solver import routing_enums_pb2
 from ortools.constraint_solver import pywrapcp
-# [END import]
 
 
-# [START data_model]
 def create_data_model():
     """Stores the data for the problem."""
     data = {}
@@ -38,10 +26,7 @@ def create_data_model():
              (1, 6), (2, 6),
              (3, 7), (6, 7),
              (0, 8), (7, 8)]
-    # Compute locations in meters using the block dimension defined as follow
-    # Manhattan average block: 750ft x 264ft -> 228m x 80m
-    # here we use: 114m x 80m city block
-    # src: https://nyti.ms/2GDoRIe "NY Times: Know Your distance"
+
     data['locations'] = [(l[0] * 114, l[1] * 80) for l in _locations]
     data['num_locations'] = len(data['locations'])
     data['time_windows'] = \
@@ -334,4 +319,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-# [END program]
+
