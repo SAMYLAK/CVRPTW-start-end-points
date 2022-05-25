@@ -1,12 +1,11 @@
-
 from functools import partial
 from ortools.constraint_solver import routing_enums_pb2
 from ortools.constraint_solver import pywrapcp
 
 
 def create_data_model():   
-    data = {}
     
+    data = {}
     _locations = 
             [(4, 4),
              (2, 0),(8, 0),
