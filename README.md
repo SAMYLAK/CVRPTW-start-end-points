@@ -8,10 +8,8 @@ from ortools.constraint_solver import routing_enums_pb2
 from ortools.constraint_solver import pywrapcp
 
 
-def create_data_model():
-   
+def create_data_model():   
     data = {}
-    
     _locations = \
             [(4, 4), # depot
              (2, 0), (8, 0), # locations to visit
