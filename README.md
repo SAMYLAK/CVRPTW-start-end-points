@@ -1,12 +1,5 @@
 # CVRPTW-start-end-points
 
-# -*- coding: utf-8 -*-
-"""
-Created on Tue May 15 22:31:22 2022
-
-@author: h.lakhdar
-"""
-
 from functools import partial
 from ortools.constraint_solver import routing_enums_pb2
 from ortools.constraint_solver import pywrapcp
