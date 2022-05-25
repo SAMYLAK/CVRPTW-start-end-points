@@ -11,15 +11,15 @@ from ortools.constraint_solver import pywrapcp
 def create_data_model():   
     data = {}
     _locations = 
-            [(4, 4), 'depot'
-             (2, 0), (8, 0), '1,2 locations to visit'
-             (0, 1), (1, 1),
-             (5, 2), (7, 2),
-             (3, 3), (6, 3),
-             (5, 5), (8, 5),
-             (1, 6), (2, 6),
-             (3, 7), (6, 7),
-             (0, 8), (7, 8)]
+            [(4, 4),
+             (2, 0),(8, 0),
+             (0, 1),(1, 1),
+             (5, 2),(7, 2),
+             (3, 3),(6, 3),
+             (5, 5),(8, 5),
+             (1, 6),(2, 6),
+             (3, 7),(6, 7),
+             (0, 8),(7, 8)]
 
     data['locations'] = [(l[0] * 114, l[1] * 80) for l in _locations]
     data['num_locations'] = len(data['locations'])
