@@ -1,14 +1,12 @@
-# CVRPTW-start-end-points
-
 from functools import partial
 from ortools.constraint_solver import routing_enums_pb2
 from ortools.constraint_solver import pywrapcp
 
 
 def create_data_model():
-    """Stores the data for the problem."""
+   
     data = {}
-    # Locations in block unit
+    
     _locations = \
             [(4, 4), # depot
              (2, 0), (8, 0), # locations to visit
